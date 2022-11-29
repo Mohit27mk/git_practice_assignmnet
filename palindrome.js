@@ -1,21 +1,15 @@
- let bool="true";
-let j = str.length -1;
-    for( let i = 0 ; i < j/2 ;i++)
-    {
-      let x = str[i] ;
-      let y = str[j-i];
-      if( x != y)
-      {
-        bool=false;
-continue;
-      }
-    }
-  if(bool){
-console.log("Is a palindrome");
-}else{
-console.log("Not a palindrome");
-
-}
+function validatePalin(str) {  
   
-     
+    // get the total length of the words  
+    const len = string.length;  
   
+    // Use for loop to divide the words into 2 half  
+    for (let i = 0; i < len / 2; i++) {  
+  
+        // validate the first and last characters are same  
+        if (string[i] !== string[len - 1 - i]) {  
+            alert( 'It is not a palindrome');  
+        }  
+    }  
+    alert( 'It is a palindrome');  
+}  
